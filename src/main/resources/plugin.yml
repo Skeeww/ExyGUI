@@ -1,0 +1,21 @@
+name: ExyGUI
+main: fr.exygames.exygui.Main
+version: "1.0"
+authors:
+  - ExyGames
+  - Skew
+commands:
+  f2w:
+    description: Ouvre l'interface Farm2Win
+    permission: exygui.f2w.open
+    usage: /f2w
+    aliases: [/farm2win, /f2w]
+  farm2win:
+    description: Ouvre l'interface Farm2Win
+    permission: exygui.f2w.open
+    usage: /farm2win
+  info:
+    description: Ouvre l'interface d'information
+    permission: exygui.info.open
+    usage: /info
+depend: [Vault]
