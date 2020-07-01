@@ -7,15 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31cb2ae8-486a-4acc-b277-861c08f15638" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/exygames/exygui/Commands/BuyPoints.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/exygames/exygui/Interfaces/Buypoints/Index.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fr/exygames/exygui/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/fr/exygames/exygui/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/plugin.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/exygames/exygui/Interfaces/Farm2Win/Index.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/exygames/exygui/Interfaces/Farm2Win/Index.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/exygames/exygui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/exygames/exygui/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/exygames/exygui/Utils/Gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/exygames/exygui/Utils/Gui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/exygames/exygui/Interfaces/Buypoints/Index.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/exygames/exygui/Interfaces/Buypoints/Index.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +92,7 @@
       <workItem from="1593553226662" duration="310000" />
       <workItem from="1593555031255" duration="558000" />
       <workItem from="1593586638925" duration="5760000" />
-      <workItem from="1593632041393" duration="1323000" />
+      <workItem from="1593632041393" duration="1872000" />
     </task>
     <servers />
   </component>
