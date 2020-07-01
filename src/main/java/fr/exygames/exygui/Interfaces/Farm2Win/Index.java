@@ -17,6 +17,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import static fr.exygames.exygui.Utils.Gui.Buy;
+
 public class Index implements Listener {
     private Inventory inventory;
     private Player player;
@@ -156,19 +158,6 @@ public class Index implements Listener {
         player.openInventory(inventory);
     }
 
-    private void Buy(ItemStack item, String command, double price){
-        final String item_name = item.getItemMeta().getDisplayName();
-        if(Main.getEco().getBalance(player) >= price){
-            Bukkit.dispatchCommand(Bukkit.getConsoleSender(), command);
-            Main.getEco().withdrawPlayer(player, price);
-            player.sendMessage(ChatColor.GREEN + "" + ChatColor.BOLD + "Félicitation vous venez d'acheter " + item_name + " !");
-            Main.getInstance().getServer().getConsoleSender().sendMessage("[ExyGUI] Achat de " + player.getDisplayName() + ": " + item_name + "(" + price + ")");
-        }else{
-            player.sendMessage(ChatColor.RED + "Vous n'avez pas assez d'argent pour acheter " + item_name + ChatColor.RED + " ! " + ChatColor.RESET + "(Solde: " + ChatColor.GREEN + Main.getEco().getBalance(player) + ChatColor.RESET + "$)");
-        }
-        player.closeInventory();
-    }
-
     @EventHandler
     private void onClick(InventoryClickEvent e){
         try {
@@ -179,7 +168,7 @@ public class Index implements Listener {
                         if(entry.getValue().get(1).equals("nan")){
                             return;
                         }
-                        Buy((ItemStack) entry.getValue().get(0), (String) entry.getValue().get(1), (Double) entry.getValue().get(2));
+                        Buy(player, (ItemStack) entry.getValue().get(0), (String) entry.getValue().get(1), (Double) entry.getValue().get(2));
                     }
                 }
                 for(Map.Entry<Integer, List<Object>> entry : kits.entrySet()) {
@@ -187,7 +176,7 @@ public class Index implements Listener {
                         if(entry.getValue().get(1).equals("nan")){
                             return;
                         }
-                        Buy((ItemStack) entry.getValue().get(0), (String) entry.getValue().get(1), (Double) entry.getValue().get(2));
+                        Buy(player, (ItemStack) entry.getValue().get(0), (String) entry.getValue().get(1), (Double) entry.getValue().get(2));
                     }
                 }
                 for(Map.Entry<Integer, List<Object>> entry : grades.entrySet()) {
@@ -195,7 +184,7 @@ public class Index implements Listener {
                         if(entry.getValue().get(1).equals("nan")){
                             return;
                         }
-                        Buy((ItemStack) entry.getValue().get(0), (String) entry.getValue().get(1), (Double) entry.getValue().get(2));
+                        Buy(player, (ItemStack) entry.getValue().get(0), (String) entry.getValue().get(1), (Double) entry.getValue().get(2));
                     }
                 }
             }

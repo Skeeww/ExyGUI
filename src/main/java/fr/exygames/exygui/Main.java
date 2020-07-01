@@ -1,5 +1,6 @@
 package fr.exygames.exygui;
 
+import fr.exygames.exygui.Commands.BuyPoints;
 import fr.exygames.exygui.Commands.Farm2Win;
 import fr.exygames.exygui.Commands.Info;
 import net.milkbowl.vault.economy.Economy;
@@ -32,7 +33,9 @@ public class Main extends JavaPlugin {
         getCommand("f2w").setExecutor(new Farm2Win());
         getCommand("farm2win").setExecutor(new Farm2Win());
 
-        getCommand("info").setExecutor(new Info());
+        getCommand("social").setExecutor(new Info());
+
+        getCommand("buypoints").setExecutor(new BuyPoints());
 
         getServer().getConsoleSender().sendMessage("[ExyGUI] Is Started !");
     }

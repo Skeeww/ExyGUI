@@ -14,8 +14,12 @@ commands:
     description: Ouvre l'interface Farm2Win
     permission: exygui.f2w.open
     usage: /farm2win
-  info:
+  social:
     description: Ouvre l'interface d'information
     permission: exygui.info.open
-    usage: /info
+    usage: /social
+  buypoints:
+    description: Acheter des points
+    permission: exygui.buypoints.open
+    usage: /buypoints
 depend: [Vault]
